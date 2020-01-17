@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fire Away Pizza</title>
+    <link rel="stylesheet" href="fireaway.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300|Quicksand|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() { 
+        $('#toggle').click(function(){ 
+            $('.mobilelinks').toggle();
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="https://www.facebook.com/" class="sociallinks" target="_blank">
+                    <img src="images\facebook_icon_dark.png" alt="Facebook"></a>
+                <a href="https://plus.google.com/discover" class="sociallinks" target="_blank">
+                    <img src="images\googleplus_icon_dark.png" alt="Google Plus"></a>
+                <a href="https://www.pinterest.com/" class="sociallinks" target="_blank">
+                    <img src="images\pinterest_icon_dark.png" alt="Pinterest"></a>
+                <a href="https://twitter.com/?lang=en" class="sociallinks">
+                    <img src="images\twitter_icon_dark.png" alt="Twitter" target="_blank"></a>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <a href="index.html">
+                    <img src="images\title128.png" alt="Fire Away Pizza" width="546" height="128" id="titlebar">
+                </a>
+                <div id="subtitle">Mobile Wood-Fired Pizza</div><br>
+            </div>
+        </header>
+        <nav>
+        </hr>
+            <div id="navblock">
+                <div class="navlink">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="navlink">
+                    <a href="menu.html">OUR&nbsp;MENU</a>
+                </div>
+                <div class="navlink">
+                    <a href="catering.html">CATERING</a>
+                </div>
+                <div class="navlink">
+                    <a href="findus.html">FIND&nbsp;US</a>
+                </div>
+                <div class="navlink">
+                    <a href="jobs.html">JOBS</a>
+                </div>
+                <div class="navlink">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <div class="navlink">
+                    <a href="gallery.html">GALLERY</a>
+                </div>
+                <div class="navlink">
+                    <a href="aboutus.html">ABOUT&nbsp;US</a>
+                </div>
+            </div>
+            <div id="navblockmobile">
+                <div class="mobilemenubutton">
+                    <a href = "#" id = "toggle">MENU</a>
+                </div>
+                <div class="mobilelinks">
+                    <div class="navlinkmobile">
+                        <a href="index.html">HOME</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="menu.html">OUR&nbsp;MENU</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="catering.html">CATERING</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="findus.html">FIND&nbsp;US</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="jobs.html">JOBS</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="gallery.html">GALLERY</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="aboutus.html">ABOUT&nbsp;US</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <main>
+            <div class="container95">
+                <div class="center">
+                    <h4>Please fill out this form for general questions or comments. <br>
+                        For catering inquiries, please visit the <a href="catering.html">catering</a> page.<br>
+                        To contact us about jobs, please see our job openings on the <a href="jobs.html">jobs</a> page.</h4>
+                </div>
+                <div class="formcontainer">
+                    <form action=" " method="post">
+                
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                    
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                        
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email" placeholder="Your email address..." required>
+
+                        <div  style="float: left; width: 45%; margin-right:5%;">
+                            <label for="country">Country</label><br>
+                            <select id="country" name="country">
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                        
+                        <div  style="float: left; width: 45%; margin-right:5%;">
+                            <label for="subject">Subject</label><br>
+                            <select id="subject" name="subject">
+                                <option value="general">General Information</option>
+                                <option value="location">Location Information</option>
+                                <option value="job">Job Inquiry</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other (State below)</option>
+                            </select>
+                        </div>
+                    
+                        <label for="content">Content</label><br>
+                        <textarea id="content" name="content" placeholder="Tell us what's on your mind!" 
+                            style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    
+                    </form>
+                </div>
+            </div>
+            <div class="container95">
+                <div class="container50" style="width: 38em;">
+                    <h1>You can also email or call us</h1>
+                    <div class="container80">
+                        <p>Email: &nbsp;
+                            <a href="mailto:customerservice@fireawaypizza.com" style="text-decoration: underline; font-size:1em;">
+                            customerservice@fireawaypizza.com</a><br>
+                        Phone: (755)555-7530<br></p>
+                    </div>
+                </div>
+                <div class="container50" style="width: 38em;">
+                    <h1>Or feel free to stop by our main office</h1>
+                    <div class="container80">
+                        <p>Fire Away Pizza<br>
+                            1234 Main St.<br>
+                            Chicago, IL 67229<br><br></p>
+                    </div>
+                </div>
+            </div>
+        <div class="clear"></div>            
+        </main>
+        <footer>
+            <div id="footerblock">
+                <div style="padding-bottom: 3em;">
+                    <a href="https://www.facebook.com/" class="sociallinks" target="_blank">
+                        <img src="images\facebook_icon_light.png" alt="Facebook"></a>
+                    <a href="https://plus.google.com/discover" class="sociallinks" target="_blank">
+                        <img src="images\googleplus_icon_light.png" alt="Google Plus"></a>
+                    <a href="https://www.pinterest.com/" class="sociallinks" target="_blank">
+                        <img src="images\pinterest_icon_light.png" alt="Pinterest"></a>
+                    <a href="https://twitter.com/?lang=en" class="sociallinks" target="_blank">
+                        <img src="images\twitter_icon_light.png" alt="Twitter"></a>
+                </div>
+                <div class="clear"></div>
+                <div id="footericon">
+                    <img src="images\logogray128.png" alt="Fire Away Pizza">
+                </div>
+                <div id="footerleft">
+                    Fire Away Pizza<br>
+                    1234 Main St.<br>
+                    Chicago, IL 67229<br><br>
+                    Phone: (755)555-7530<br>
+                    Email: <a href="mailto:customerservice@fireawaypizza.com" 
+                        style="text-decoration: underline; font-size:1em;">customerservice@fireawaypizza.com</a><br><br>
+                </div>
+                <div id="footerright">
+                    <div style="float: left; padding-right: 1em;">
+                        <a href="index.html">HOME</a><br>
+                        <a href="menu.html">OUR&nbsp;MENU</a><br>
+                        <a href="catering.html">CATERING</a><br>
+                        <a href="findus.html">FIND&nbsp;US</a><br>
+                    </div>
+                    <div style="float: left; padding-left: 1em;">
+                        <a href="jobs.html">JOBS</a><br>
+                        <a href="contact.html">CONTACT</a><br>
+                        <a href="gallery.html">GALLERY</a><br>
+                        <a href="aboutus.html">ABOUT&nbsp;US</a><br>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="center">
+                    <p style="font-size: small">
+                        Copyright &copy; 2017 <br>
+                        Sean Bodine, Nicholas Lewis, and Sajan Khadka
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>            
+        </footer>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fire Away Pizza</title>
+    <link rel="stylesheet" href="fireaway.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300|Quicksand|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() { 
+        $('#toggle').click(function(){ 
+            $('.mobilelinks').toggle();
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="https://www.facebook.com/" class="sociallinks" target="_blank">
+                    <img src="images\facebook_icon_dark.png" alt="Facebook"></a>
+                <a href="https://plus.google.com/discover" class="sociallinks" target="_blank">
+                    <img src="images\googleplus_icon_dark.png" alt="Google Plus"></a>
+                <a href="https://www.pinterest.com/" class="sociallinks" target="_blank">
+                    <img src="images\pinterest_icon_dark.png" alt="Pinterest"></a>
+                <a href="https://twitter.com/?lang=en" class="sociallinks">
+                    <img src="images\twitter_icon_dark.png" alt="Twitter" target="_blank"></a>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <a href="index.html">
+                    <img src="images\title128.png" alt="Fire Away Pizza" width="546" height="128" id="titlebar">
+                </a>
+                <div id="subtitle">Mobile Wood-Fired Pizza</div><br>
+            </div>
+        </header>
+        <nav>
+        </hr>
+            <div id="navblock">
+                <div class="navlink">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="navlink">
+                    <a href="menu.html">OUR&nbsp;MENU</a>
+                </div>
+                <div class="navlink">
+                    <a href="catering.html">CATERING</a>
+                </div>
+                <div class="navlink">
+                    <a href="findus.html">FIND&nbsp;US</a>
+                </div>
+                <div class="navlink">
+                    <a href="jobs.html">JOBS</a>
+                </div>
+                <div class="navlink">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <div class="navlink">
+                    <a href="gallery.html">GALLERY</a>
+                </div>
+                <div class="navlink">
+                    <a href="aboutus.html">ABOUT&nbsp;US</a>
+                </div>
+            </div>
+            <div id="navblockmobile">
+                <div class="mobilemenubutton">
+                    <a href = "#" id = "toggle">MENU</a>
+                </div>
+                <div class="mobilelinks">
+                    <div class="navlinkmobile">
+                        <a href="index.html">HOME</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="menu.html">OUR&nbsp;MENU</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="catering.html">CATERING</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="findus.html">FIND&nbsp;US</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="jobs.html">JOBS</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="gallery.html">GALLERY</a>
+                    </div>
+                    <div class="navlinkmobile">
+                        <a href="aboutus.html">ABOUT&nbsp;US</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <main>
+            <div class="center">
+                <h4>Please fill out the form below to request a truck for catering or other events.<br>
+                    For all other inquiries, please visit the <a href="contact.html">contact</a> page.</h4>
+            </div>
+            <div class="formcontainer">
+                <form action=" " method="post">
+            
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+                
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+                    
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="example@somewhere.com" required>
+
+                    <label for="phone">Phone</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="555-222-3333" required>
+
+                    <label for="type">Type of Event</label><br>
+                    <select id="type" name="type" style="width:50%; display:block; float:none;">
+                        <option value="private">Catering (private)</option>
+                        <option value="public">Catering (public)</option>
+                        <option value="event">Public Event</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="address">Address</label><br>
+                    <textarea id="address" name="address" placeholder="Enter the full address where the event will be held" 
+                        style="height:100px" required></textarea>
+
+                    <label for="date">Date of Event</label><br>
+                    <input type="text" id="date" name="date" placeholder="MM/DD/YYYY" required></input>
+                    
+                    <label for="starttime">Event Start Time</label><br>
+                    <select id="starttime" name="starttime" style="width:50%; display:block; float:none;">
+                        <option value="am8">8:00 AM</option>
+                        <option value="am9">9:00 AM</option>
+                        <option value="am10">10:00 AM</option>
+                        <option value="am11">11:00 AM</option>
+                        <option value="pm12">12:00 PM</option>
+                        <option value="pm1">1:00 PM</option>
+                        <option value="pm2">2:00 PM</option>
+                        <option value="pm3">3:00 PM</option>
+                        <option value="pm4">4:00 PM</option>
+                        <option value="pm5">5:00 PM</option>
+                        <option value="pm6">6:00 PM</option>
+                        <option value="pm7">7:00 PM</option>
+                        <option value="pm8">8:00 PM</option>
+                        <option value="pm9">9:00 PM</option>
+                        <option value="pm10">10:00 PM</option>
+                        <option value="pm11">11:00 PM</option>
+                        <option value="am12">12:00 AM</option>
+                        <option value="am1">1:00 AM</option>
+                        <option value="am2">2:00 AM</option>
+                    </select>
+
+                    <label for="endtime">Event End Time</label><br>
+                    <select id="endtime" name="endtime" style="width:50%; display:block; float:none;">
+                        <option value="am8">8:00 AM</option>
+                        <option value="am9">9:00 AM</option>
+                        <option value="am10">10:00 AM</option>
+                        <option value="am11">11:00 AM</option>
+                        <option value="pm12">12:00 PM</option>
+                        <option value="pm1">1:00 PM</option>
+                        <option value="pm2">2:00 PM</option>
+                        <option value="pm3">3:00 PM</option>
+                        <option value="pm4">4:00 PM</option>
+                        <option value="pm5">5:00 PM</option>
+                        <option value="pm6">6:00 PM</option>
+                        <option value="pm7">7:00 PM</option>
+                        <option value="pm8">8:00 PM</option>
+                        <option value="pm9">9:00 PM</option>
+                        <option value="pm10">10:00 PM</option>
+                        <option value="pm11">11:00 PM</option>
+                        <option value="am12">12:00 AM</option>
+                        <option value="am1">1:00 AM</option>
+                        <option value="am2">2:00 AM</option>
+                    </select>
+
+                    <label for="additional">Additional Comments</label><br>
+                    <textarea id="additional" name="additional" placeholder="Anything else we need to know?" 
+                        style="height:150px"></textarea>
+
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div id="footerblock">
+                <div style="padding-bottom: 3em;">
+                    <a href="https://www.facebook.com/" class="sociallinks" target="_blank">
+                        <img src="images\facebook_icon_light.png" alt="Facebook"></a>
+                    <a href="https://plus.google.com/discover" class="sociallinks" target="_blank">
+                        <img src="images\googleplus_icon_light.png" alt="Google Plus"></a>
+                    <a href="https://www.pinterest.com/" class="sociallinks" target="_blank">
+                        <img src="images\pinterest_icon_light.png" alt="Pinterest"></a>
+                    <a href="https://twitter.com/?lang=en" class="sociallinks" target="_blank">
+                        <img src="images\twitter_icon_light.png" alt="Twitter"></a>
+                </div>
+                <div class="clear"></div>
+                <div id="footericon">
+                    <img src="images\logogray128.png" alt="Fire Away Pizza">
+                </div>
+                <div id="footerleft">
+                    Fire Away Pizza<br>
+                    1234 Main St.<br>
+                    Chicago, IL 67229<br><br>
+                    Phone: (755)555-7530<br>
+                    Email: <a href="mailto:customerservice@fireawaypizza.com" 
+                        style="text-decoration: underline; font-size:1em;">customerservice@fireawaypizza.com</a><br><br>
+                </div>
+                <div id="footerright">
+                    <div style="float: left; padding-right: 1em;">
+                        <a href="index.html">HOME</a><br>
+                        <a href="menu.html">OUR&nbsp;MENU</a><br>
+                        <a href="catering.html">CATERING</a><br>
+                        <a href="findus.html">FIND&nbsp;US</a><br>
+                    </div>
+                    <div style="float: left; padding-left: 1em;">
+                        <a href="jobs.html">JOBS</a><br>
+                        <a href="contact.html">CONTACT</a><br>
+                        <a href="gallery.html">GALLERY</a><br>
+                        <a href="aboutus.html">ABOUT&nbsp;US</a><br>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="center">
+                    <p style="font-size: small">
+                        Copyright &copy; 2017 <br>
+                        Sean Bodine, Nicholas Lewis, and Sajan Khadka
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>            
+        </footer>
+    </div>
+</body> 
+</html>
